@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centraizacao vertical</title>
+    <style>
+       #conteiner{
+        height: 500px;
+        background-color: aquamarine;
+        padding: 10px;
+        position: relative;
+       }
+
+      #conteudo{
+        height: 200px;
+        background-color: bisque;
+        position: absolute;
+        width: 300px;
+        left: 50%;/* Empurra a lateral esquerda até a metade da largura da caixa */
+  
+        top: 50%;/* Empurra o topo do elemento até a metade da altura da caixa */
+           
+       transform: translate(-50%, -50%);
+        
+
+      }
+    </style>
+
+
+
+</head>
+<body>
+    <section id="conteiner">
+    <article id="conteudo">
+
+
+    </article>
+
+
+
+    </section>
+</body>
+</html>

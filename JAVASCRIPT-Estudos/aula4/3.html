@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(202, 8, 8);
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicar()"  onmouseenter="entrar()">
+      <p>Interagir aqui</p>
+    </div>
+
+    <script>
+     var a= window.document.getElementById('area')
+    function clicar(){
+        a.innerText = 'clicou'
+        a.style.background = 'green'
+    }
+
+    function entrar(){
+        a.innerText='entrou'
+    }
+    </script>
+</body>
+</html>

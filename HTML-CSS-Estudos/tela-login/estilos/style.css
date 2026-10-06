@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+*{
+    font-family: monospace;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+
+main{
+     height: 100vh;
+    width: 100vw;
+     position: relative; /*havia posto o absolute no maine relative no login e funcinou so q isso fez o login mover se com ponto de partida da sua propria pagina*/
+}
+
+#login{
+    background-color: bisque;
+    width: 250px;
+    height: 500px;
+    text-align: center;
+    border-radius: 20px;
+   top: 50%;
+   left: 50%;
+    transition: width 0.3s, heigth 0.3s;
+
+     position: absolute;
+    
+    box-shadow: 0px 0px 10px rgb(97, 97, 204);/*havia me esquecido e usei ao inves o border mas o q queria era sombra*/
+    transform: translate(-50%,-50%);
+}
+
+section#login > div#imagem{
+    background:  url(../imagens/pexels-laura-paredis-1047081-21255266.jpg);
+    background-size: cover;
+    height: 250px;
+    border-radius:20px ;
+    display: block;
+}
+
+section#login > div#formulario{
+ display: block;
+ padding: 10px;
+}
+
+
+
+form > input[type=submit]{
+ display: block;
+ border: none;
+ border-radius: 10px;
+ color: white;
+ background-color: rgb(11, 11, 87);
+ height: 20px;
+ width: 100%; /*% pq e largura total do conteinner e nao da tela q seria com vw*/
+}
+form > input[type=submit]:hover{
+    background-color: rgb(6, 58, 6);
+}
+
+form > a.botao{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(114, 0, 0);
+    text-decoration: none;
+   border-radius: 10px;
+   color: white;
+   padding-top: 1px;
+   margin-top: 5px;
+}
+
+form > a.botao:hover{
+    background-color:  rgb(6, 58, 6);
+}
+
+form > div.campo{
+ background-color:black ;
+ border-radius: 10px;
+ width: 100%;
+ margin-top: 5px;
+ margin-bottom: 2px;
+}
+
+div.campo > label{
+    display: none;
+}
+div.campo > span{
+ color: white;
+ font-size: 2em;
+ width: 40px;
+ padding: 5px;
+ 
+}
+
+
+div.campo > input{
+    background-color: rgb(15, 48, 15);
+    font-size: 1em;
+    height: 100%;
+    width: 79%;
+    padding-top: 23px;
+     border: none;
+ border-radius: 10px;
+ padding-bottom: 5px;
+   
+}
+
+

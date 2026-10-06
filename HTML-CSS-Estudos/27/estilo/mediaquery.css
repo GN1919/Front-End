@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+@media screen and (min-with: 768px){
+    #icon{
+        display: none;
+    }
+}

@@ -1,0 +1,15 @@
+@charset="UTF-8";
+<style>
+      body{
+        background-color: bisque;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font: size 30px; ;
+      }
+      h1{
+        color: blueviolet;
+        text-decoration: line-through;
+      }
+      p{
+        text-align: justify;
+      }
+    </style>

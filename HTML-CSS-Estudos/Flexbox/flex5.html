@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.conteiner{/*conteiner pai */
+            background-color: aqua;
+            display: flex;
+            height: 400px;
+              flex-flow: row nowrap;
+        }
+
+        div.item{
+           background-color: beige;
+            border: 1px solid black;
+           padding: 20px;
+           text-align: center;
+           flex-basis: 100px; /*define largura dos itens*/
+           
+        }
+
+        div#i1{
+         align-self: center;
+        }
+         
+        div#i4{
+            align-self: flex-start;
+        }
+      
+         div#i5{
+            align-self: flex-end;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+     <div class="item" id="i1" >a </div> <!--organiza por ordem-->
+     <div class="item" id="i2" >b</div>
+     <div class="item" id="i3" >c</div>
+     <div class="item" id="i4">d</div>
+     <div class="item" id="i5" >e</div>
+    
+   
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+@charset "UTF-8";   
+body{
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: beige;
+}
+h2{
+    color: brown;
+}
+h1#principal{
+   text-align: center; 
+   color: blue;
+}
+.avancado{
+    color: black;
+}

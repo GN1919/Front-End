@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+     <fieldset>
+        <legend>Dados Pessoais</legend>
+         <p><label for="usu">Usuário:</label> <input type="text" name="usu" id="usu" required minlength="5" placeholder="nome do usuário" autocomplete="name"> </p>
+          <!--errei no for e coloquei arquivo php,o for tem q ter o mesmo nome q id q é o usu-->
+             
+         
+             <p><label for="isenha">Digite Senha: <input type="password" name="isenha" id="isenha" required minlength="8" placeholder="senha"> </label></p>
+         
+            
+         
+             <p>
+           <label for="media">media:</label>
+           <input type="number" name="media" id="imedia" min="10" max="20" placeholder="0 a 10" required maxlength="2">
+            
+             </p>
+         
+             <p>
+           <label for="idia">Data</label>
+           <input type="date" name="idia" id="idia" value="2000-12-12">
+             </p>
+         
+             <p>
+            <label for="ihora">Hora</label>
+            <input type="time" name="ihora" id="ihora">
+             </p>
+             <label for="">Desporto:</label>
+             
+             <input type="checkbox" name="ibasquete" id="ibasquete"><label for="ibasquete">Baquetebol</label>
+             <input type="checkbox" name="ifutebol" id="ifutebol " checked><label for="ifutebol">Futebol</label>
+
+             <p>
+                Sexo:
+                <input type="radio" name="sexo" id="iman"><label for="iman">Masculino</label>
+                <input type="radio" name="sexo" id="ifem"><label for="ifem">Feminino</label>
+             </p>
+
+             <p>
+                <label for="ifoto">Foto de Perfil:</label>
+                <input type="file" name="ifoto" id="ifoto">
+             </p>
+
+             <p>
+                <label for="ipro">Província</label>
+                <select name="provincia" id="pro">
+                    <option value="" selected>------Escolha-----</option>
+                    <optgroup label="Parte Sul">
+                        <option value="KS">Kwanza Sul</option>
+                        <option value="LD">Luanda</option>
+                        <option value="KN">Kwanza Norte</option>
+                    </optgroup>
+
+                    <optgroup label="Parte Norte">
+                        <option value="KS">Kwanza Sul</option>
+                        <option value="LD">Luanda</option>
+                        <option value="KN">Kwanza Norte</option>
+                    </optgroup>
+                    
+                   
+                </select>
+                 <p>
+                      <label for="iprofi">Profissao:</label>
+                      <input type="text" name="prof" id="iprof" list="lista">
+                      <datalist id="lista">
+                        <option>Professor</option>
+                        <option>Programador</option>
+                      </datalist>
+                    </p>
+                 <p>
+                    <label for="msg">Mensagem:</label>
+                    <textarea name="msg" id="imsg" cols="30"  ></textarea>
+                    <output>
+                        output serve pra mostrar  mensagem de saidas
+                    </output>
+                 </p>   
+                
+            
+     </fieldset>
+
+
+
+
+     <p>
+        <input type="submit" value="send">
+        <input type="reset" value="clean">
+    </p>
+
+    </form>
+</body>
+</html>

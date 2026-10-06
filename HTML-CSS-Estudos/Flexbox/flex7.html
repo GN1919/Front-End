@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.conteiner{/*conteiner pai */
+            background-color: aqua;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+           background-color: rgb(83, 83, 9);
+            border: 1px solid black;
+           text-align: center;
+           flex-basis: 150px;
+           
+           
+        }
+
+        div#a1{
+           
+           flex-shrink: 0;
+           flex-grow: 0;
+        }
+
+         div#a2{
+           /*flex: initial; e o msm q flex: 0 1 auto;padrao para 0 0 auto e flex none*/
+           flex-shrink: 0;
+            flex-grow: 2;
+            /*short hand flex: 2 8 150px;*/
+        }
+
+         div#a3{
+            
+           flex-shrink: 0;
+           flex-grow: 1;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+     <div class="item" id="a1">a</div>
+     <div class="item" id="a2">b</div>
+     <div class="item" id="a3">c</div>
+     
+   
+
+
+
+    </div>
+</body>
+</html>
